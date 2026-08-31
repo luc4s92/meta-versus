@@ -1,34 +1,87 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Metaversus
 
-## Getting Started
+Metaversus is a responsive animated landing page that presents a fictional
+metaverse experience. It is built with the Next.js App Router, React, Tailwind
+CSS, and Framer Motion.
 
-First, run the development server:
+## Tech stack
+
+- Next.js 16
+- React 19
+- Framer Motion 13
+- Tailwind CSS 3
+- ESLint 9
+
+## Requirements
+
+- Node.js 20.9 or newer
+- npm 10 or newer
+
+## Getting started
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Available scripts
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+npm run dev
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Starts the development server with Turbopack.
 
-## Learn More
+```bash
+npm run lint
+```
 
-To learn more about Next.js, take a look at the following resources:
+Runs ESLint across the project.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Creates an optimized production build.
 
-## Deploy on Vercel
+```bash
+npm run start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Starts the production server after a successful build.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Project structure
+
+```text
+app/          App Router pages and layouts
+components/   Reusable interface components
+constants/    Static content and shared data
+pages/api/    API routes
+public/       Images and static assets
+sections/     Landing-page sections
+styles/       Global styles and shared style utilities
+utils/        Animation helpers
+```
+
+The main page is defined in `app/page.js`, and the global layout is defined in
+`app/layout.js`.
+
+## Code-agent guidance
+
+`AGENTS.md` contains project instructions for compatible coding assistants.
+`CLAUDE.md` forwards those instructions to Claude Code, while
+`AGENTS-TEMPLATE.md` can be copied and adapted for future projects.
+
+## Deployment
+
+The application can be deployed to any platform that supports Next.js and
+Node.js, including [Vercel](https://vercel.com/new).
