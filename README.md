@@ -14,8 +14,8 @@ CSS, and Framer Motion.
 
 ## Requirements
 
-- Node.js 20.9 or newer
-- npm 10 or newer
+- Node.js 24
+- npm 11 or newer
 
 ## Getting started
 
